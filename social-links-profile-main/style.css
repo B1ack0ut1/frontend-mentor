@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Inter";
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format(truetype);
+}
+
+:root {
+  --clr-primary: rgb(172, 199, 55);
+  --clr-gray-light: rgb(51, 51, 51);
+  --clr-gray: rgb(31, 31, 31);
+  --clr-gray-dark: rgb(20, 20, 20);
+
+  --font-family-default: "Inter", sans-serif;
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+  --fs-900: 5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--fs-400);
+  color: var(--clr-gray-dark);
+}
