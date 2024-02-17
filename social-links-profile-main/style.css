@@ -2,11 +2,11 @@
   font-family: "Inter";
   font-display: swap;
   font-weight: 100 900;
-  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format(truetype);
+  src: url("assets/fonts/Inter-VariableFont_wght.ttf") format(truetype);
 }
 
 :root {
-  --clr-primary: rgb(172, 199, 55);
+  --clr-primary: rgb(182, 210, 57);
   --clr-secondary: rgb(255, 255, 255);
   --clr-tertiary: rgb(217, 217, 217);
   --clr-gray-light: rgb(51, 51, 51);
@@ -16,6 +16,7 @@
   --font-family-default: "Inter", sans-serif;
 
   --fw-regular: 500;
+  --fw-semibold: 600;
   --fw-bold: 700;
   --fw-black: 800;
 
@@ -25,6 +26,8 @@
   --fs-700: 1.75rem;
   --fs-800: 2rem;
   --fs-900: 5rem;
+
+  --clr-social-link-active: rgb(188, 235, 29);
 }
 
 *,
@@ -86,7 +89,6 @@ body {
 .profile-location {
   margin-bottom: 2rem;
   color: var(--clr-primary);
-  font-weight: var(--fw-bold);
 }
 
 .profile-desc {
@@ -109,5 +111,6 @@ body {
 }
 
 .social-link:hover {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-social-link-active);
+  color: black;
 }
