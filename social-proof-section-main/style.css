@@ -53,7 +53,8 @@ svg {
 .container {
   max-width: 1280px;
   padding: 4rem 6rem;
-  background-color: pink;
+  /* background-color: pink; */
+  position: relative;
 }
 
 .top-section {
@@ -79,14 +80,30 @@ svg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: end;
 }
 
 .rating-item {
   display: flex;
-  padding: 1rem 2rem;
-  background-color: var(--clr-bg-rating-item);
   margin-bottom: 1rem;
+  justify-content: end;
+  width: 28rem;
+}
+
+.rating-item[data-rating-item-key="item-1"] {
+  margin-right: 8rem;
+}
+
+.rating-item[data-rating-item-key="item-2"] {
+  margin-right: 4rem;
+}
+
+/* Was added to create staircase layout for rating items */
+.rating-item-content {
+  background-color: var(--clr-bg-rating-item);
   border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  display: flex;
 }
 
 .stars {
@@ -105,4 +122,60 @@ svg {
   padding: 0 1rem;
   color: var(--clr-primary);
   font-weight: var(--fw-bold);
+}
+
+.review-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-item {
+  /* height: 16rem; */
+  width: 31%;
+  background-color: var(--clr-primary);
+  border-radius: 0.5rem;
+  padding: 2.25rem 2rem;
+}
+
+.user-profile {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.user-photo-container {
+  width: 3rem;
+  aspect-ratio: 1 /1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-info {
+  margin-left: 1.5rem;
+}
+
+.user-name {
+  color: ghostwhite;
+  font-weight: var(--fw-bold);
+}
+
+.user-state {
+  color: var(--clr-user-state);
+}
+
+.user-comment {
+  color: ghostwhite;
+}
+
+.bg-pattern-top {
+  position: absolute;
+  width: 30%;
+  z-index: -1;
+}
+
+.bg-pattern-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 90%;
 }
